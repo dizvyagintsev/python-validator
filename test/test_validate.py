@@ -1,6 +1,6 @@
 import pytest
 
-from validator.validate import validate
+from validator import validate
 
 
 @pytest.mark.parametrize(
