@@ -69,7 +69,12 @@ def _is_function(node: _Node) -> bool:
 
 
 def _needs_validation(
-    node: Union[ast.Module, ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef],
+    node: Union[
+        ast.Module,
+        ast.FunctionDef,
+        ast.AsyncFunctionDef,
+        ast.ClassDef,
+    ],
 ) -> Generator[_Node, None, None]:
     for child_node in node.body:
         if isinstance(

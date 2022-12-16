@@ -56,7 +56,7 @@ def CorrectFunctionName():
     class CorrectClassName():
         def correct_function_name():
             ...
-                      
+
 class CorrectClassName():
     def correct_function_name():
         class CorrectClassName2():
